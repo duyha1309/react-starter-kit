@@ -1,8 +1,8 @@
 import { combineReducers } from "redux-starter-kit";
-import counterReducer from "./counterReducer";
+import counterSlice from "./counterReducer";
 
 const rootReducer = combineReducers({
-  counterState: counterReducer
+  counterState: counterSlice.reducer
 });
 
 export default rootReducer;

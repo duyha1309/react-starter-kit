@@ -1,9 +1,15 @@
 import { increment, decrement } from "../actions";
-import { createReducer } from "redux-starter-kit";
+import { createSlice } from "redux-starter-kit";
 
-const counterReducer = createReducer(0, {
+// const counterReducer = createReducer(0, {
+//   [increment.type]: state => state + 1,
+//   [decrement.type]: state => state - 1
+// })
+
+const counterSlice = createSlice({
+  initialState: 0,
   [increment.type]: state => state + 1,
   [decrement.type]: state => state - 1
 })
 
-export default counterReducer;
+export default counterSlice;
