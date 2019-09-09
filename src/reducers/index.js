@@ -1,8 +1,10 @@
 import { combineReducers } from "redux-starter-kit";
-import counterSlice from "./counterReducer";
+import todosReducer from "../components/todos/todosSlice";
+import visibilityFilterReducer from "../components/filter/visibilityFilterReducer";
 
 const rootReducer = combineReducers({
-  counterState: counterSlice.reducer
+  todos: todosReducer,
+  visibilityFilters: visibilityFilterReducer
 });
 
 export default rootReducer;
