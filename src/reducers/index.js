@@ -1,6 +1,6 @@
 import { combineReducers } from "redux-starter-kit";
 import todosReducer from "../components/todos/todosSlice";
-import visibilityFilterReducer from "../components/filter/visibilityFilterReducer";
+import visibilityFilterReducer from "../components/filter/filterSlice";
 
 const rootReducer = combineReducers({
   todos: todosReducer,

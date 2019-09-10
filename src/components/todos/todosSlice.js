@@ -14,9 +14,9 @@ const todoSlice = createSlice({
       }
     },
     toggleTodo(state, action) {
-      const todo = state.find(todo === action.payload);
-      if (todo) {
-        todo.completed = !todo.completed;
+      const currentTodo = state.find(todo => todo.id === action.payload);
+      if (currentTodo) {
+        currentTodo.completed = !currentTodo.completed;
       }
     }
   }

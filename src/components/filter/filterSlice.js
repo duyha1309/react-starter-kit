@@ -1,10 +1,5 @@
 import { createSlice } from "redux-starter-kit";
-
-export const VisibilityFilters = {
-  SHOW_ALL: 'SHOW_ALL',
-  SHOW_COMPLETED: 'SHOW_COMPLETED',
-  SHOW_ACTIVE: 'SHOW_ACTIVE'
-};
+import { VisibilityFilters } from "../../constants";
 
 const filterSlice = createSlice({
   slice: 'visibilityFilters',
